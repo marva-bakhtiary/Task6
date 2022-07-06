@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Main from './Components/Pages/Main.jsx'
 function App() {
   return (
     <div>
-      <h1>Welcome to Our App!</h1>
+      <Main />
     </div>
   )
 }
