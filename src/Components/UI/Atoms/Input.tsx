@@ -1,7 +1,11 @@
 import React from "react";
 import { FaEdit } from "react-icons/fa";
-const Input = ({ value, onChange ,handleKeypress }) => {
 
+interface InputProps {
+  value: any;
+  onChange: any;
+}
+const Input = ({ value, onChange }: InputProps) => {
   return (
     <div className="flex">
       <div className=" h-9 w-10 text-2xl text-white btnColor justify-center flex items-center	rounded-sm ">
@@ -13,7 +17,6 @@ const Input = ({ value, onChange ,handleKeypress }) => {
         placeholder="New Todo"
         value={value}
         onChange={onChange}
-        onKeyPress={handleKeypress}
       />
     </div>
   );
